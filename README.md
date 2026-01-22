@@ -1,11 +1,18 @@
 # 🐦 Flappy Bird – Unity 2D Mobile Game
 
 This project is a **Flappy Bird–style 2D mobile game** developed in Unity.  
-It was my **first serious 2D mobile project**, and I focused not only on gameplay mechanics,  
-but also on building a complete, polished mobile-game experience.
+It was my **first serious 2D mobile project**, built specifically with mobile devices in mind  
+using a **9:16 portrait resolution** and touch-based controls.
 
-Although the core idea is simple, I invested a lot of time into:
-UI systems, audio management, scene transitions, prefab workflows, and project structure.
+Although the core idea is simple, I invested significant time into building a complete and polished experience by focusing on:
+
+- UI systems  
+- Audio management  
+- Scene transitions  
+- Prefab workflows  
+- Script communication  
+- Persistent data (high score)  
+- Mobile-friendly UX design  
 
 This project became my first real **full pipeline Unity experience**.
 
@@ -13,20 +20,20 @@ This project became my first real **full pipeline Unity experience**.
 
 ## 🧠 Project Story (What I Practiced & Learned)
 
-This game was built as a learning-focused project to understand how real mobile games are structured in Unity.
+This game was developed as a learning-focused project to understand how real mobile games are structured in Unity.
 
-During development, I worked extensively on:
+Even though it looks simple from the outside, most of the real work went into:
 
-- UI systems (Canvas, buttons, anchors, layouts)
-- Scene management (Main Menu → Game → Restart flow)
-- Audio systems (SFX, background music, mute/unmute persistence)
-- Script communication between systems
-- Prefabs and procedural object spawning
-- Project folder organization
-- Mobile-style polish and UX details
+- Building UI with Unity Canvas  
+- Managing audio states across scenes  
+- Saving persistent data (high score)  
+- Handling scene transitions  
+- Creating prefab-based obstacles  
+- Connecting scripts across systems  
+- Designing a clean project structure  
 
-Most of the challenge in this project was not player movement —  
-but integrating **UI, audio, scenes, managers, prefabs, and persistent data** into a clean structure.
+More time was spent on **UI, audio, scene logic, persistence, and system architecture**  
+than on basic player movement itself.
 
 ---
 
@@ -54,47 +61,58 @@ The project uses **two main scenes**:
 
 ## 🚀 Features & Gameplay Systems
 
-- 2D Flappy Bird–style movement
-- Two-scene architecture (Main Menu + Game)
-- Sound ON / OFF system with persistent state
-- High score saved using persistent storage
-- Real-time score tracking
+- 2D Flappy Bird–style movement  
+- Mobile-first design (9:16 portrait resolution)  
+- Two-scene architecture (Main Menu + Game)  
+- Touch-based gameplay (mobile)  
+- Keyboard & mouse support (desktop)  
+- Sound ON / OFF system with persistent state  
+- High score saved using persistent storage  
+- Real-time score tracking  
 - Sound effects:
-  - Jump sound on every flap
-  - Coin sound every 10 pipes passed
-  - Death sound on collision
-- Prefab-based pipe generation
-- Multiple C# scripts with clear responsibilities
-- Canvas-based UI system
-- Button-driven interactions
-- Scene transition logic
-- Audio manager logic
-- Script-to-script communication
-- Clean Unity project structure
+  - Jump sound on every flap  
+  - Coin sound every 10 pipes passed  
+  - Death sound on collision  
+- Prefab-based pipe generation  
+- Multiple C# scripts with clear responsibilities  
+- Canvas-based UI system  
+- Button-driven interactions  
+- Scene transition logic  
+- Audio manager logic  
+- Script-to-script communication  
+- Clean Unity project structure  
 
 ---
 
 ## 🎮 Gameplay Logic Overview
 
-- Player taps / presses to flap and stay in the air  
+- The game is primarily designed for **mobile touch input**  
+- Player taps the screen to flap and stay in the air  
 - Pipes spawn continuously as prefabs  
 - Score increases for each pipe passed  
 - Every 10 pipes → bonus coin sound effect  
 - Collision with pipe or ground → Game Over  
 - Touching the ceiling → bird is destroyed  
-- High score is saved and displayed  
-- Player can restart from menu  
+- High score is saved and displayed even after the app is closed  
+- Sound settings persist across scenes  
+- Player restarts the game from the Main Menu  
+
+> Note:  
+> The game does **not** include a pause system.  
+> Each session is designed as a continuous arcade-style run.
 
 ---
 
 ## ⌨️ Controls
 
-| Input | Action |
-|-------|--------|
-| Space / Left Mouse Button | Flap |
-| UI Button | Start Game |
-| UI Button | Toggle Sound |
-| UI Button | Restart |
+| Platform | Input | Action |
+|----------|--------|--------|
+| Mobile | Screen Tap | Flap |
+| Desktop | Left Mouse Button | Flap |
+| Desktop | Space | Flap |
+| UI | Start Button | Start Game |
+| UI | Sound Button | Toggle Sound |
+| UI | Restart Button | Restart Game |
 
 ---
 
@@ -128,14 +146,14 @@ The project uses **two main scenes**:
 
 ## 📺 Tools & Resources Used
 
-- **Unity 2022.x (2D)**
-- **C# with Visual Studio**
-- Unity UI (Canvas, Buttons, Text)
-- Unity Audio System
-- Unity Scene Management
-- Unity Prefabs
-- Unity Asset Store (visuals & audio)
-- PlayerPrefs for persistent data
+- **Unity 2022.x (2D Mobile)**  
+- **C# with Visual Studio**  
+- Unity UI (Canvas, Buttons, Text)  
+- Unity Audio System  
+- Unity Scene Management  
+- Unity Prefabs  
+- Unity Asset Store (visuals & audio)  
+- PlayerPrefs for persistent data  
 
 ---
 
@@ -143,9 +161,9 @@ The project uses **two main scenes**:
 
 This repository includes the essential Unity folders:
 
-- **Assets**
-- **Packages**
-- **ProjectSettings**
+- **Assets**  
+- **Packages**  
+- **ProjectSettings**  
 
 Unity will automatically generate the remaining folders when opening the project.
 
@@ -163,7 +181,7 @@ Unity will automatically generate the remaining folders when opening the project
 
 ## 📦 Playable Build
 
-A downloadable Windows build will be added soon under the **Releases** tab.
+A downloadable mobile build (Android) will be added soon under the **Releases** tab.
 
 ---
 
