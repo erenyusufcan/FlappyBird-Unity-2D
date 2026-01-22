@@ -131,16 +131,20 @@ The project uses **two main scenes**:
 
 ---
 
-## 🖼️ GIF Previews
+## 🖼️ Gameplay Previews
 
-### 🎬 Main Menu & Sound Toggle  
-<img src="Media/menu-sound-toggle.gif" width="500">
+### 🏠 Main Menu & Sound Settings  
+<img src="Media/MainMenu.gif" width="300">
 
-### 🎮 Gameplay Loop  
-<img src="Media/gameplay-loop.gif" width="500">
+---
 
-### 💥 Game Over & Restart  
-<img src="Media/gameover-restart.gif" width="500">
+### 🔁 Restart Flow & Score Reset  
+<img src="Media/RestartGame.gif" width="300">
+
+---
+
+### 💀 Game Over Screen & End Buttons  
+<img src="Media/EndOfTheGameButtons.gif" width="300">
 
 ---
 
